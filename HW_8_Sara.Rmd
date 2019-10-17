@@ -1,0 +1,24 @@
+---
+title: "HW_8"
+author: "Sara Schreder"
+date: "10/16/2019"
+output: html_document
+---
+Using the Loblolly dataset:
+
+1. How many variables and how many observations are there?
+
+2. What type of data (according to R) are in each of the vectors?
+
+3. What command could you use to force the Seed data to be an integer?
+
+4. Write command(s) that record the date according to your computer and adds it to Loblolly as a column (repeating the same value for all observations) called ‘date’. In snippet, report the head of your revised data.frame.
+
+5. Add a new vector of data called ‘mature’ to the Loblolly data.frame that is a sequence of logical values such that any tree equal to or over the age of 10 is ‘TRUE’ and younger than 10 is ‘FALSE’
+---
+For the following questions, create your own objects in R.
+1, Make a list that contains the abbreviated days of the week (‘Mon’, ‘Tue’, etc), months of the year, the numbers 1 through 31.
+
+2. Write a command that will create a matrix with 4 rows and 5 columns and fill it as follows:
+
+3. Remove the Violet vector from the matrix and fill it with logical values that tell us which movies the characters were actually in.
