@@ -100,19 +100,15 @@ For example:
     ## MonstersInc    4    3   2   1      5
 
 ```{R}
-Edna <- c(5, 1, 2, 3)
-Dory <- c(1, 2, 3, 4)
-Eva <- c(4, 5, 1, 2)
-Boo <- c(3, 4, 5, 1)
-Violet <- c(2, 3, 4, 5)
-Pixar.data <- data.frame(Dory, Edna, Eva, Boo, Violet)
-row.names(Pixar.data) <- c("FindingNemo", "Incredibles", "Wall-E", "MonstersInc")
-Pixar.data
+my_matrix <- matrix(0, ncol=5, nrow=4, data=seq(1:5))
+colnames(my_matrix) <- c("Dory", "Edna", "Eva", "Boo", "Violet")
+row.names(my_matrix) <- c("FindingNemo", "Incredibles", "Wall-E", "MonstersInc")
+my_matrix
 ```
 3. Remove the Violet vector from the matrix and fill it with logical values that tell us which movies the characters were actually in.
 
 ```{R}
-Pixar.data$Violet <- NULL
+my_matrix <- my_matrix[,-4]
 
 
 ```
