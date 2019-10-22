@@ -81,7 +81,6 @@ For example:
     ## Incredibles "FALSE" "TRUE"
 ```  
 ###my_matrix <- my_matrix[,-5]
-my_matrix <- as.logical
 using logical, all values of 1 are true and all others are false
 ```
 
