@@ -30,7 +30,9 @@ height and age are "double," while Seed is "integer."
 ```
 
 3.  What command could you use to force the Seed data to be an integer?
-
+```
+loblolly$Seed <- as.integer(loblolly$Seed)
+```
 
 
 4.  Write command(s) that record the date according to your computer and
@@ -81,6 +83,13 @@ For example:
     ## Incredibles "FALSE" "TRUE"
 ```  
 ###my_matrix <- my_matrix[,-5]
+###fmat <- function(n) {
+    diag(n)==1
+}
+> fmat(4)
+
+###fmat(4)
+
 using logical, all values of 1 are true and all others are false
 ```
 
