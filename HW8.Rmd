@@ -33,7 +33,6 @@ seed: integer
     adds it to Loblolly as a column (repeating the same value for all
     observations) called ‘date’. In snippet, report the head of your
     revised data.frame.
-
 `Loblolly$date <- Sys.Date()`
 
 ```
