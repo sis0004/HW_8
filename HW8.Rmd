@@ -27,7 +27,7 @@ age: double
 seed: integer
 
 3.  What command could you use to force the Seed data to be an integer?
-
+`as.integer(Loblolly$Seed)`
 
 4.  Write command(s) that record the date according to your computer and
     adds it to Loblolly as a column (repeating the same value for all
