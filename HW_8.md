@@ -39,14 +39,26 @@ loblolly$Seed <- as.integer(loblolly$Seed)
     adds it to Loblolly as a column (repeating the same value for all
     observations) called ‘date’. In snippet, report the head of your
     revised data.frame.
-    
-    
+```
+loblolly$date <- Sys.Date()
+head(loblolly)
+```
 
 5.  Add a new vector of data called ‘mature’ to the Loblolly data.frame
     that is a sequence of logical values such that any tree equal to or
     over the age of 10 is ‘TRUE’ and younger than 10 is ‘FALSE’
-    
-     
+```
+for (yr in 1:84)
+{
+  if (loblolly$age[yr] > 9){
+    loblolly$mature[yr] <- 1
+    }
+  else{
+    loblolly$mature[yr] <- 0
+  }
+}
+loblolly$mature <- as.logical(loblolly$mature)
+```
     
 ------------------------------------------------------------------------
 #### For the following questions, create your own objects in R.
@@ -74,23 +86,9 @@ my_matrix
 
 3. Remove the Violet vector from the matrix and fill it with logical values that tell us which movies the characters were actually in. 
 
-For example:
-
-<!-- -->
-
-    ##               Dory    Edna   
-    ## FindingNemo "TRUE"  "FALSE"
-    ## Incredibles "FALSE" "TRUE"
-```  
-###my_matrix <- my_matrix[,-5]
-###fmat <- function(n) {
-    diag(n)==1
-}
-> fmat(4)
-
-###fmat(4)
-
-using logical, all values of 1 are true and all others are false
+```
+my_matrix <- my_matrix[,-5]
+my_matrix <- my_matrix==1
 ```
 
 ***
