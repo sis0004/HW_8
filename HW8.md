@@ -50,6 +50,7 @@ height age Seed       date
     that is a sequence of logical values such that any tree equal to or
     over the age of 10 is ‘TRUE’ and younger than 10 is ‘FALSE’
 `Loblolly$mature <- Loblolly$age >= 10`
+
 ```
  height age Seed       date mature
 1    4.51   3  301 2019-10-21  FALSE
