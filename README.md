@@ -88,7 +88,7 @@ my_matrix
 
 ```
 my_matrix <- my_matrix[,-5]
-my_matrix==1
+my_matrix <- my_matrix==1
 ```
 ***
 #### Final Question to Be Completed with Your Partner
