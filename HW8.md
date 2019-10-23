@@ -19,6 +19,7 @@ Submit your answer as an .Rmd file using the following steps in GitHub:
 For the following questions, use the Loblolly dataset that comes with Base R. Loblolly contains some data about a common garden experiment involving loblolly pine trees. Load the Loblolly dataset and answer the following questions (1-5).
 
 1.  How many variables and how many observations are there?
+
 84 observations, 3 variables
 
 2.  What type of data (according to R) are in each of the vectors?
@@ -33,6 +34,7 @@ seed: integer
     adds it to Loblolly as a column (repeating the same value for all
     observations) called ‘date’. In snippet, report the head of your
     revised data.frame.
+
 `Loblolly$date <- Sys.Date()`
 
 ```
@@ -59,18 +61,11 @@ height age Seed       date
 43  41.74  15  301 2019-10-21   TRUE
 57  52.70  20  301 2019-10-21   TRUE
 ```
-
 ------------------------------------------------------------------------
 #### For the following questions, create your own objects in R.
 
 1.  Make a list that contains the abbreviated days of the week (‘Mon’,
     ‘Tue’, etc), months of the year, the numbers 1 through 31.
-```{R}
-weekdays <- c("Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun")
-Month <- month.abb
-Day <- c(1:31)
-my_list <- list(weekdays, Month, Day)
-```
 
 For example:
 
@@ -87,11 +82,18 @@ For example:
     ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
     ## [24] 24 25 26 27 28 29 30 31
 
+
+```{R}
+days <- c("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+months <- month.abb
+number <- 1:31    
+   
+my_list <- list(days, months, number)
+```
+
 2.  Write a command that will create a matrix with 4 rows and 5 columns
     and fill it as follows:
-
-<!-- -->
-
+    
     my_matrix
 
     ##             Dory Edna Eva Boo Violet
@@ -115,12 +117,10 @@ my_matrix
 ```
 For example:
 
-<!-- -->
-
     ##               Dory    Edna   
     ## FindingNemo "TRUE"  "FALSE"
     ## Incredibles "FALSE" "TRUE"
-    
+
 ***
 #### Final Question to Be Completed with Your Partner
 4. Import a text dataset of your choice into R using `read.csv` (or `read.table` or any of the other `read.` options). Use type coercion to adjust any variables that are read in incorrectly.  Report a snippet of the data and define the type of each vector in the data.frame.
