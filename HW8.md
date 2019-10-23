@@ -28,6 +28,7 @@ age: double
 seed: integer
 
 3.  What command could you use to force the Seed data to be an integer?
+
 `Loblolly$Seed <- as.integer(Loblolly$Seed)`
 
 4.  Write command(s) that record the date according to your computer and
@@ -93,14 +94,6 @@ my_list <- list(days, months, number)
 
 2.  Write a command that will create a matrix with 4 rows and 5 columns
     and fill it as follows:
-    
-    my_matrix
-
-    ##             Dory Edna Eva Boo Violet
-    ## FindingNemo    1    5   4   3      2
-    ## Incredibles    2    1   5   4      3
-    ## Wall-E         3    2   1   5      4
-    ## MonstersInc    4    3   2   1      5
 
 ```{R}
 my_matrix <- matrix(0, ncol=5, nrow=4, data=seq(1:5))
@@ -115,11 +108,8 @@ my_matrix <- my_matrix[ ,-5]
 my_matrix <- my_matrix==1
 my_matrix
 ```
-For example:
 
-    ##               Dory    Edna   
-    ## FindingNemo "TRUE"  "FALSE"
-    ## Incredibles "FALSE" "TRUE"
+    
 
 ***
 #### Final Question to Be Completed with Your Partner
