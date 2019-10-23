@@ -108,10 +108,9 @@ my_matrix
 3. Remove the Violet vector from the matrix and fill it with logical values that tell us which movies the characters were actually in.
 
 ```{R}
-my_matrix <- my_matrix[,-5]
-
+my_matrix <- my_matrix[ ,-5]
+my_matrix <- my_matrix==1
 my_matrix
-
 ```
 For example:
 
