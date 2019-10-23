@@ -23,8 +23,11 @@ For the following questions, use the Loblolly dataset that comes with Base R. Lo
 84 observations, 3 variables
 
 2.  What type of data (according to R) are in each of the vectors?
+
 height: double
+
 age: double
+
 seed: integer
 
 3.  What command could you use to force the Seed data to be an integer?
