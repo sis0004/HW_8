@@ -39,31 +39,17 @@ seed: integer
     observations) called ‘date’. In snippet, report the head of your
     revised data.frame.
 
-`Loblolly$date <- Sys.Date()`
-
-```
-height age Seed       date
-1    4.51   3  301 2019-10-21
-15  10.89   5  301 2019-10-21
-29  28.72  10  301 2019-10-21
-43  41.74  15  301 2019-10-21
-57  52.70  20  301 2019-10-21
-71  60.92  25  301 2019-10-21
-2    4.55   3  303 2019-10-21
+```{r}
+Loblolly$date <- Sys.Date()`
+head(Loblolly, n=5)
 ```
 
 5.  Add a new vector of data called ‘mature’ to the Loblolly data.frame
     that is a sequence of logical values such that any tree equal to or
     over the age of 10 is ‘TRUE’ and younger than 10 is ‘FALSE’
-`Loblolly$mature <- Loblolly$age >= 10`
-
-```
- height age Seed       date mature
-1    4.51   3  301 2019-10-21  FALSE
-15  10.89   5  301 2019-10-21  FALSE
-29  28.72  10  301 2019-10-21   TRUE
-43  41.74  15  301 2019-10-21   TRUE
-57  52.70  20  301 2019-10-21   TRUE
+```{R}
+Loblolly$mature <- Loblolly$age >= 10`
+head(Loblolly, n=5)
 ```
 ------------------------------------------------------------------------
 #### For the following questions, create your own objects in R.
@@ -117,3 +103,13 @@ my_matrix
 ***
 #### Final Question to Be Completed with Your Partner
 4. Import a text dataset of your choice into R using `read.csv` (or `read.table` or any of the other `read.` options). Use type coercion to adjust any variables that are read in incorrectly.  Report a snippet of the data and define the type of each vector in the data.frame.
+<<<<<<< HEAD:HW8.md
+=======
+
+
+```{R}
+Grades <- read.csv(file="../HW_8/SampleDataFrameHW8.csv")
+
+```
+
+>>>>>>> dd6b6511aed46076301754205cccf8d749b93894:HW8.Rmd
